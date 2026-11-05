@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use TurboCAD in CAD interoperability workflows or research, please cite it using this metadata."
+title: "TurboCAD: Native Solid Edge & Autodesk Inventor OLE2 Inspector for FreeCAD"
+version: 0.0.2
+date-released: 2026-11-05
+license: GPL-2.0-or-later
+url: "https://github.com/LeonardoNardiko/TurboCAD"
+repository-code: "https://github.com/LeonardoNardiko/TurboCAD"
+authors:
+  - family-names: "de Lima Junior"
+    given-names: "Leonardo"
+    alias: "Leonardo Nardiko"
+    website: "https://tecnopro.me"
+keywords:
+  - freecad
+  - cad-interoperability
+  - solid-edge
+  - autodesk-inventor
+  - ole2
+  - python

@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+
+# Local test samples (drop native files here for the smoke test)
+samples/
+freecad/TurboCAD/tests/samples/
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

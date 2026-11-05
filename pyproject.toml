@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+[project]
+name = "turbocad-freecad"
+version = "0.0.2"
+description = "Inspect native Solid Edge and Inventor CAD files in FreeCAD"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "GPL-2.0-or-later" }
+dependencies = ["olefile>=0.46"]
+
+[project.optional-dependencies]
+dev = [
+    "freecad-stubs>=1.0.21",
+    "pyside6>=6.11.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["freecad/TurboCAD/tests"]

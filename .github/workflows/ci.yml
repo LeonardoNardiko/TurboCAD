@@ -1,0 +1,28 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install runtime dependency
+        run: pip install olefile
+
+      - name: Byte-compile addon
+        run: python -m compileall -q freecad
+
+      - name: Unit tests (no FreeCAD needed)
+        run: python freecad/TurboCAD/tests/test_core.py
+
+      - name: Smoke test (skips when no sample files present)
+        run: python freecad/TurboCAD/tests/test_smoke.py
